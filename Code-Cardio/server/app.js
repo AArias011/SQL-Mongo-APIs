@@ -40,8 +40,12 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`running on port ${PORT}`)
+});
 
-app.listen(666, () => console.log('Listening on port 666...'));
+// app.listen(666, () => console.log('Listening on port 666...'));
 
 // Body parser!!!
 var bodyParser = require('body-parser');
